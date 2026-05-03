@@ -11,9 +11,9 @@ jobs:
          run: |
            mkdir temp
            echo "alpha" > temp/alpha.html
-        - name: upload artifact
-          uses: actions/upload-artifact@v4
-          with:
+       - name: upload artifact
+         uses: actions/upload-artifact@v4
+         with:
              name: files
              path: temp/
 
